@@ -28,7 +28,7 @@ pipeline {
 
   post {
     always {
-      archieveArtifacts artifacts:'**/target/*.war', onlyIfSuccessful:true
+      archiveArtifacts artifacts:'**/target/*.war', onlyIfSuccessful:true
     } 
 
   }    
