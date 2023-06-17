@@ -1,13 +1,15 @@
 pipeline {
+  
   agent any
   tools {
     maven 'maven'
   }
+  
   stages {
-    stage("Build") {
+    stage('Build') {
       sh 'mvn compile'
     }
-  stage("test"){
+  stage('test'){
         sh 'mvn clean test'
       }
   stage('package') {
